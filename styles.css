@@ -1,0 +1,58 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}  
+  .container { 
+   
+    max-width: 100%;
+    padding: 0 3px;
+      background-color: aqua;
+}
+
+.grid{
+display: grid;
+grid-gap: 0.3em;
+grid-template-columns: repeat(18,1fr);
+justify-items: stretch;
+/* align-items: start; */
+grid-template-columns:minmax(1fr,1fr);
+
+
+}
+.item{
+  min-width: calc((100% - 51px) / 18);
+  background-color: bisque;
+  border: 1px solid red;
+}
+.item-1{
+  /* width: 1fr; */
+  grid-column: 1/18;
+  justify-self: start;
+}
+.item-4{
+  grid-column: 2/13;
+  /* justify-self: start; */
+}
+@media screen and (min-width:1200px) {
+
+  
+ 
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: none; /* Hide the table */
+  }
+  
+  /* .periodic-table-image {
+    display: block; /* Show the image */
+  } 
+
