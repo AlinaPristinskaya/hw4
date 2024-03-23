@@ -21,20 +21,21 @@ ul{
       
 }
 .wrapper{
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   flex-direction: column;
+  padding: 1px;
  
 }
 .grid{
 display: grid;
-grid-gap: 1em;
+grid-gap: 0.5em;
 grid-template-columns: repeat(18,1fr);
 justify-items: stretch;
 /* align-items: start; */
 /* grid-template-columns:minmax(1fr,1fr); */
 
-padding: 2px;
+padding: 0px;
 
 
 }
@@ -43,7 +44,8 @@ padding: 2px;
 }
 .item{
   min-width: calc((100% - 51px) / 18);
-  padding: 1px;
+  font-size: 5px;
+  padding: 2px;
   
 }
 .item-1{
@@ -107,18 +109,44 @@ padding: 2px;
    border: 3px solid rgb(70, 50, 50);
   border-radius: 5%;
 }
-@media screen and (min-width:1200px) {
+/* @media screen and (-width:600px) {
+  .item{
+    font-size: 12px;
+  }
+    
+   
+  } */
 
+@media screen and (min-width:800px) {
+  .item{
+    font-size: 8px;
+    
+  }
+    
+   
+  }
+@media screen and (min-width:1000px) {
+.item{
+  font-size: 12px;
+  
+}
   
  
 }
 
+@media screen and (min-width:1400px) {
+  .item{
+    font-size: 14px;
+    
+  }
+    
+   
+  }
 @media (max-width: 600px) {
   .container {
-    display: none; /* Hide the table */
+    display: none; 
   }
   
-  /* .periodic-table-image {
-    display: block; /* Show the image */
+  
   } 
 
