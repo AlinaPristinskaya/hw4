@@ -117,6 +117,9 @@ ul {
     display: none;
   }
 }
+img{
+  width: 100%;;
+}
 /* The picture is displayed only on screens up to 601 px */
 @media (min-width: 601px) {
   img {
