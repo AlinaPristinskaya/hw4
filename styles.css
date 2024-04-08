@@ -116,13 +116,21 @@ ul {
   .container {
     display: none;
   }
+ 
 }
+/* The problem has several solutions
+So that the picture always takes up the entire width of the screen, I set this rule for it */
 img{
   width: 100%;;
 }
 /* The picture is displayed only on screens up to 601 px */
+/* the picture on the screen up to 600 pixels has a white background,
+ so I change the background color at this width */
 @media (min-width: 601px) {
   img {
     display: none;
+  }
+  body {
+    background-color: #bcb2b2;
   }
 }

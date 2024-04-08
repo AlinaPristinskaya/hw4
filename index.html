@@ -500,7 +500,21 @@
           </ul>
         </div>
       </section>
-      <img src="./table.png" alt="Table" />
+      <div class="picture"><img src="./table.png" alt="Table" /></div>
+
+      <!-- This is an example of how this could be implemented
+Using another picture as an example, I wanted to show how this can be implemented and take into account 
+the possibility of displaying different images on double-density screens
+The rules are read one by one and the first rule that satisfies the condition will be applied -->
+
+      <!-- <div>   <picture>
+        <source srcset=".table.png 1x, ./table.png 2x" media="(max-width: 400px)">
+        <source srcset="./Tablitsa1x.jpg 1x, ./Tablitsa2x.jpg 2x" media="(max-width: 601px)">
+        
+        <source 
+        media="(min-width: 1158px)">
+        <img src="./table.png" alt="Table" width="360">
+    </picture></div> -->
     </main>
   </body>
 </html>
